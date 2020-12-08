@@ -914,6 +914,30 @@ call s:HL('CocInfoHighlight', s:none, s:none, s:undercurl, s:yellow)
 call s:HL('CocHintHighlight', s:none, s:none, s:undercurl, s:blue)
 
 " }}}
+" nvim-lsp: {{{
+
+hi! link LspDiagnosticsDefaultError GruvboxRed
+hi! link LspDiagnosticsFloatingError GruvboxRed
+hi! link LspDiagnosticsSignError GruvboxRed
+
+hi! link LspDiagnosticsDefaultWarning GruvboxOrange
+hi! link LspDiagnosticsFloatingWarning GruvboxOrange
+hi! link LspDiagnosticsSignWarning GruvboxOrange
+
+hi! link LspDiagnosticsDefaultHint GruvboxBlue
+hi! link LspDiagnosticsFloatingHint GruvboxBlue
+hi! link LspDiagnosticsSignHint GruvboxBlue
+
+hi! link LspDiagnosticsDefaultInformation GruvboxYellow
+hi! link LspDiagnosticsFloatingInformation GruvboxYellow
+hi! link LspDiagnosticsSignInformation GruvboxYellow
+
+call s:HL('LspDiagnosticsUnderlineError', s:none, s:none, s:undercurl, s:red)
+call s:HL('LspDiagnosticsUnderlineWarning', s:none, s:none, s:undercurl, s:orange)
+call s:HL('LspDiagnosticsUnderlineInfo', s:none, s:none, s:undercurl, s:yellow)
+call s:HL('LspDiagnosticsUnerlineHint', s:none, s:none, s:undercurl, s:blue)
+
+" }}}
 
 " Filetype specific -----------------------------------------------------------
 " Diff: {{{
